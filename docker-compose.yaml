@@ -1,0 +1,16 @@
+version: '2'
+services:
+  app:
+    depends_on:
+      - mongo
+    image: searchmetrics
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod
+      - SPRING_DATA_MONGODB_URI=mongodb://mongo:27017
+      - SPRING_DATA_MONGODB_DATABASE=searchmetrics
+    ports:
+      - 8080:8080
+  mongo:
+    image: mongo:4.4.4
+    ports:
+      - 27017:27017

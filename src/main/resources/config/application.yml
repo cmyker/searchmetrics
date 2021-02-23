@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: Searchmetrics coding task
+  profiles:
+    active: dev
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017
+      database: searchmetrics
+
+server:
+  port: 8080
+
+application:
+  # fetch bitcoin rate frequency - cron expression
+  fetch-rate-cron: 0 * * * * *
+  # URL to fetch from
+  fetch-rate-url: https://blockchain.info/tobtc?currency=USD&value=1
+  # connection timeout to URL
+  fetch-rate-connection-timeout-seconds: 3
