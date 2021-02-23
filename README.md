@@ -1,5 +1,7 @@
 # Searchmetrics coding task
 
+![Screenshot](img.png)
+
 ### Tools used
 
 * [Spring initializr](https://start.spring.io/#!type=gradle-project&language=java&platformVersion=2.3.9.RELEASE&packaging=jar&jvmVersion=11&groupId=com.searchmetrics&artifactId=codingtask&name=codingtask&description=Searchmetrics%20coding%20task&packageName=com.searchmetrics.codingtask&dependencies=flapdoodle-mongo,data-mongodb,web)
