@@ -12,7 +12,7 @@
 
 ### Some notes
 
-* Springfox Swagger UI is can be used for easy access at http://localhost:8080/swagger-ui/
+* Springfox Swagger UI is can be used for easy access at http://localhost:8080/swagger-ui/, this URL is also echoed to application stdout log
 * There are 2 types of tests - Unit and IT (IntegrationTest), for latter spring context is loaded with embedded mongo
 * Fetch endpoint is added for convenience
 * Rate fetch is Spring CRON expression, can be configured in application.yml
@@ -26,9 +26,9 @@
 
 ### Build & run
 
-* directly, dev mode:
-  `docker-compose up mongo`
+* directly, dev mode:  
+  `docker-compose up mongo`  
   `./gradlew`
-* build docker image and run:
-  `./gradlew jibDockerBuild`
+* build docker image and run:  
+  `./gradlew jibDockerBuild`  
   `docker-compose up app`
